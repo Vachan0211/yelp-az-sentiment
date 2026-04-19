@@ -1,0 +1,25 @@
+# Data files (too large for Git — download separately)
+data/*.csv
+data/*.json
+
+# Model outputs (regenerate by running the pipeline)
+outputs/*.csv
+outputs/*.png
+outputs/*.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
