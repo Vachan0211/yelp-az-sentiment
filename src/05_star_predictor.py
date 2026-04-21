@@ -85,7 +85,7 @@ def prepare_data(path: str) -> tuple:
     tfidf   = TfidfVectorizer(max_features=3_000, min_df=5, max_df=0.95)
     X       = tfidf.fit_transform(df["cleaned_text"])
     y       = df["stars_y"].values
-    labels  = [f"{i}★" for i in sorted(df["stars_y"].unique())]
+    labels  = [f"{i} star" for i in sorted(df["stars_y"].unique())]
 
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
@@ -168,7 +168,7 @@ def plot_confusion_matrix(results: list[dict], label_names: list[str]) -> None:
 def save_report(results: list[dict]) -> None:
     """Write accuracy and classification report for each model to a text file."""
     path = f"{OUTPUT_DIR}/star_predictor_report.txt"
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         for res in results:
             f.write(f"{'='*60}\n")
             f.write(f"Model: {res['name']}\n")
