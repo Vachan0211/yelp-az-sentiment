@@ -203,16 +203,14 @@ average rating and the market average, using a conservative $800K annual revenue
 
 ---
 
-## Authors
+## Author
 
 | Name | Role |
 |------|------|
-| Vachan Thambi Naveen | Data pipeline, topic modelling |
-| Hinal Natvar Patel   | Sentiment analysis, visualisations |
-| Dong Liu             | Clustering, star predictor |
-| Arpana Mallavarupu Felix | Financial health module, report |
+| Vachan Thambi Naveen | Data pipeline, sentiment analysis, topic modelling, clustering, financial health scoring |
 
 BANA 572 — Machine Learning & Text Mining, Oregon State University, 2025
+
 
 ---
 
