@@ -201,6 +201,51 @@ average rating and the market average, using a conservative $800K annual revenue
 - **Category managers** can see which service categories (e.g. Fast Food, Automotive)
   carry the highest negative sentiment ratios and require structural intervention.
 
+## Results Snapshot
+
+| Metric | Value |
+|--------|-------|
+| Reviews analysed | 431,708 |
+| Businesses scored | 9,906 |
+| Sentiment — Positive | 86.6% |
+| Sentiment — Negative | 11.9% |
+| Star Predictor Accuracy (LR) | 69.15% |
+| LDA Topics Discovered | 5 |
+| K-Means Clusters (elbow) | 8 |
+| At-Risk Businesses | 3,286 |
+| Critical Businesses | 1,675 |
+
+---
+
+## Visual Results
+
+### Sentiment Distribution
+![Sentiment Distribution](assets/sentiment_distribution_pie.png)
+
+### Star Rating Distribution
+![Star Ratings](assets/star_rating_distribution.png)
+
+### Sentiment Breakdown — Top 5 Businesses
+![Top 5 Businesses](assets/sentiment_top5_businesses.png)
+
+### Top Categories by Negative Sentiment Ratio
+![Negative Categories](assets/negative_sentiment_ratio_by_category.png)
+
+### Elbow Method — Optimal K Selection
+![Elbow Method](assets/elbow_method.png)
+
+### K-Means Cluster Visualisation (PCA)
+![PCA Clusters](assets/kmeans_pca_scatter.png)
+
+### Star Rating Predictor — Confusion Matrix
+![Confusion Matrix](assets/star_predictor_confusion_matrix.png)
+
+### Business Health Score Distribution
+![Health Scores](assets/health_score_distribution.png)
+
+### At-Risk Businesses
+![At Risk](assets/at_risk_businesses.png)
+
 ---
 
 ## Author
